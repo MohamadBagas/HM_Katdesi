@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle with Safe Zone Padding for Maskable Icons -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+
+  <!-- Geodetic Grid Lines (Longitude & Latitude) -->
+  <circle cx="256" cy="256" r="160" stroke="#ffffff" stroke-width="4" stroke-opacity="0.25" fill="none" />
+  <ellipse cx="256" cy="256" rx="80" ry="160" stroke="#ffffff" stroke-width="3" stroke-opacity="0.25" fill="none" />
+  <line x1="96" y1="256" x2="416" y2="256" stroke="#ffffff" stroke-width="3" stroke-opacity="0.25" />
+
+  <!-- Compass Star / Theodolite North Arrow -->
+  <polygon points="256,120 274,236 256,220" fill="#ef4444" />
+  <polygon points="256,120 238,236 256,220" fill="#dc2626" />
+  <polygon points="256,392 274,276 256,292" fill="#94a3b8" />
+  <polygon points="256,392 238,276 256,292" fill="#cbd5e1" />
+
+  <!-- Runner Silhouette in Gold -->
+  <g transform="translate(196, 170) scale(0.24)">
+    <!-- Head -->
+    <circle cx="260" cy="80" r="45" fill="url(#gold)" />
+    <!-- Torso -->
+    <path d="M220 140 L270 240 L310 210 L270 140 Z" fill="url(#gold)" />
+    <!-- Arms -->
+    <path d="M230 150 L170 200 L140 180" stroke="url(#gold)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M270 160 L330 190 L380 170" stroke="url(#gold)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <!-- Legs in dynamic stride -->
+    <path d="M270 240 L350 320 L400 310" stroke="url(#gold)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M240 240 L180 340 L120 400" stroke="url(#gold)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+
+  <!-- Banner Text "UGM 21K" -->
+  <rect x="156" y="400" width="200" height="42" rx="21" fill="#ffffff" />
+  <text x="256" y="427" font-family="system-ui, sans-serif" font-size="20" font-weight="900" fill="#1e3a8a" text-anchor="middle" letter-spacing="2">UGM 21K</text>
+</svg>

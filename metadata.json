@@ -1,0 +1,6 @@
+{
+  "name": "UGM Geodesy Half Marathon Live Tracker",
+  "description": "Aplikasi pelacak perjalanan rute dan peta real-time dengan fitur live location sharing untuk acara Half Marathon Geodesi UGM.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
